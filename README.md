@@ -1,5 +1,5 @@
-Learn-Entity-Framework-with-CSharp
-Overview
+##Learn-Entity-Framework-with-CSharp
+#Overview
 This project is designed to help developers learn how to use Entity Framework (EF) Core with C#. It demonstrates how to create, read, update, and delete (CRUD) records in a MySQL database using EF Core, focusing on a simple student management system.
 
 Features
@@ -13,7 +13,7 @@ Prerequisites
 MySQL Server (version 6.0.2 or later)
 Entity Framework Core and MySQL packages. You can install these via NuGet:
 
-#Configuration
+## Configuration
 Before running the application, you need to configure your database connection in the OptionLogin class within the Program.cs file. Modify the following properties according to your MySQL server configuration:
 
 Usage Example
