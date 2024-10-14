@@ -11,8 +11,7 @@ namespace EntityFrameworkCode.T1
     {
         public int Id { get; set; }
         public string Name { get; set; }
-
-        public StudentAddress Address { get; set; }
+       public StudentAddress Address { get; set; }
     }
 
     public class StudentAddress
@@ -39,7 +38,6 @@ namespace EntityFrameworkCode.T1
                 $"User={_username};Password={_passwrod};",
                                  new MySqlServerVersion(new Version(6, 0, 2)));
 
-
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -64,10 +62,10 @@ namespace EntityFrameworkCode.T1
                     Name = "Kamal Kumar",
                     Address = new StudentAddress
                     {
-                        Address = "123 Main St",
-                        City = "Metropolis",
-                        State = "CA",
-                        Country = "USA"
+                        Address = "Ashoka Nagar",
+                        City = "Gurugram",
+                        State = "HARYANA",
+                        Country = "INDIA"
                     }
                 };
 

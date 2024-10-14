@@ -4,6 +4,7 @@ using System.Linq;
 using System.Collections.Generic;
 using EntityFrameworkCode.Relation;
 using EntityFrameworkCode.T1;
+using EntityFrameworkCode.T2;
 class OptionLogin
 {
     public string Ip { get; set; }
@@ -20,6 +21,47 @@ class Program
     {
         Console.WriteLine("******** Entity Framework ***************");
 
+        Console.WriteLine("Please choose Mechanism");
+
+        Console.WriteLine("Press  1 : One to One Relation");
+        Console.WriteLine("Press  2 : One to Many Relation");
+
+        var input = int.Parse(Console.ReadLine());
+
+        switch (input)
+        {
+            case 1:
+                {
+                    var rel = new RelationOneToOne();
+
+                    rel.ControlCRUD();
+
+                    var rel2 = new RelationForeignKey();
+
+                    rel2.CRUDOnReferenceIntegrity();
+                }
+                break;
+            case 2:
+                {
+                    var contectmanytoone = new EntityFramwworkOnetoMany();
+                    EntityFramwworkOnetoMany.Start();
+
+
+                }
+                break;
+            default:
+                Console.WriteLine("Invalid selection. Please choose either 1 or 2.");
+                break;
+
+
+
+
+
+
+        }
+
+
+
         //using (var model = new RunModel())
         //{
         //    model.Run();    
@@ -28,13 +70,7 @@ class Program
         //}
 
 
-        var rel = new RelationOneToOne();
 
-        rel.ControlCRUD();
-
-        var rel2 = new RelationForeignKey();
-
-        rel2.CRUDOnReferenceIntegrity();
 
 
 
