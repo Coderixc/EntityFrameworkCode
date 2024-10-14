@@ -50,6 +50,7 @@ This class defines configuration settings, relationships between entities, and s
 # What is Fluent API in Entity Framework ?
 The Fluent API in Entity Framework Core is a way to configure entity properties and relationships using method chaining instead of data annotations.
 OnModelCreating Method :
+
 <img width="507" alt="image" src="https://github.com/user-attachments/assets/a393cf91-0e0b-4abd-a608-68fb621f4b6c">
 
 ## Apply CRUD Operation using Entity Framework ?
