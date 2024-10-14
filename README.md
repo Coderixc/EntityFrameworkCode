@@ -1,5 +1,5 @@
-##Learn-Entity-Framework-with-CSharp
-#Overview
+## Learn-Entity-Framework-with-CSharp
+# Overview
 This project is designed to help developers learn how to use Entity Framework (EF) Core with C#. It demonstrates how to create, read, update, and delete (CRUD) records in a MySQL database using EF Core, focusing on a simple student management system.
 
 Features
