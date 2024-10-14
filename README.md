@@ -66,25 +66,25 @@ OnModelCreating Method :
 # Delete Record
 <img width="687" alt="image" src="https://github.com/user-attachments/assets/6dbece66-3433-48f0-9872-92802703299b">
 
-## What is DataBase Migration in EF Core ?
-# Database Migrations
-# Advantage:
+# What is DataBase Migration in EF Core ?
+## Database Migrations
+## Advantage:
 EF’s support for database migrations makes it easier to manage changes to the database schema as your application evolves.
 
-# Explanation: 
+## Explanation: 
 With EF migrations, you can alter the database schema without losing data. Migrations allow you to incrementally apply changes to the database, keeping it in sync with your model classes. This is especially useful in collaborative projects where the database may undergo frequent updates.
 
-# Example: 
+## Example: 
 If you add a new field to your Student model, a migration can automatically update the database schema to include this new field. EF handles the generation of migration scripts, making it straightforward to apply these changes to your database.
 
-## Change Tracking
-# Advantage:
+# Change Tracking
+## Advantage:
 EF automatically tracks changes made to entities in memory, which simplifies the process of updating records.
 
-# Explanation:
+## Explanation:
 EF’s change tracking feature keeps track of the current and original values of entity properties. When SaveChanges is called, EF generates the necessary SQL to update only those fields that were modified, which is efficient and reduces data redundancy.
 
-# Example:
+## Example:
 If you retrieve a Student entity, modify its Name property, and then call SaveChanges, EF will detect the modification and only update the Name field in the database, leaving other fields untouched.
 
 # Conclusion
